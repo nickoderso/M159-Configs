@@ -1,0 +1,10 @@
+dn: cn=Max Mustermann,ou=people,dc=m159,dc=iet-gibb,dc=ch
+objectClass: person
+cn: Max Mustermann
+sn: Mustermann
+
+dn: cn=Erika Musterfrau,ou=people,dc=m159,dc=iet-gibb,dc=ch
+objectClass: person
+cn: Erika Musterfrau
+sn: Musterfrau
+

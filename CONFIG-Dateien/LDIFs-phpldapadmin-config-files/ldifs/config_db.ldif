@@ -1,0 +1,31 @@
+dn: olcDatabase=bdb,cn=config
+objectClass: olcDatabaseConfig
+objectClass: olcBdbConfig
+olcDatabase: bdb
+olcSuffix: dc=m159,dc=iet-gibb,dc=ch
+olcDbDirectory: /var/lib/ldap
+olcDbIndex: objectClass eq
+olcDbconfig: set_cachesize 0 2097152 0
+olcDbconfig: set_lk_max_objects 1500
+olcDbconfig: set_lk_max_locks 1500
+olcDbconfig: set_lk_max_lockers 1500
+olcAccess: to attrs=userPassword,shadowLastChange
+  by dn.exact="gidNumber=0+uidNumber=0,cn=peercred,cn=external,cn=auth" write
+  by group="cn=LDAP Read Write,ou=groups,dc=m159,dc=iet-gibb,dc=ch" write
+  by group="cn=LDAP Read Only,ou=groups,dc=m159,dc=iet-gibb,dc=ch"  read
+  by anonymous auth
+  by self write
+  by * none
+olcAccess: to attrs=cn,dc,gecos,gidNumber,homeDirectory,loginShell,
+ member,memberUid,objectClass,ou,sn,uid,uidNumber,uniqueMember,entry
+  by dn.exact="gidNumber=0+uidNumber=0,cn=peercred,cn=external,cn=auth" write
+  by group="cn=LDAP Read Write,ou=groups,dc=m159,dc=iet-gibb,dc=ch" write
+  by users read
+  by anonymous auth
+  by * none
+olcAccess: to *
+  by dn.exact="gidNumber=0+uidNumber=0,cn=peercred,cn=external,cn=auth" write
+  by group="cn=LDAP Read Write,ou=groups,dc=m159,dc=iet-gibb,dc=ch" write
+  by group="cn=LDAP Read Only,ou=groups,dc=m159,dc=iet-gibb,dc=ch"  read
+  by * none 
+

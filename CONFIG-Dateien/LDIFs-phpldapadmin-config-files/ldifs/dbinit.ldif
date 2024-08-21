@@ -1,0 +1,26 @@
+dn: dc=m159,dc=iet-gibb,dc=ch
+objectClass: domain
+dc: m159
+
+dn: cn=admin,dc=m159,dc=iet-gibb,dc=ch
+objectClass: organizationalRole
+objectClass: simpleSecurityObject
+cn: admin
+userPassword: {SSHA}LTTHE6SV2IDIyzvrJQLK1sZAIkdEsWCr
+
+dn: ou=people,dc=m159,dc=iet-gibb,dc=ch
+objectClass: organizationalUnit
+ou: people
+
+dn: ou=groups,dc=m159,dc=iet-gibb,dc=ch
+objectClass: organizationalUnit
+ou: groups
+
+dn: cn=LDAP Read Write,ou=groups,dc=m159,dc=iet-gibb,dc=ch
+objectClass: groupOfNames
+member: cn=admin,dc=m159,dc=iet-gibb,dc=ch
+
+dn: cn=LDAP Read Only,ou=groups,dc=m159,dc=iet-gibb,dc=ch
+objectClass: groupOfNames
+member: cn=admin,dc=m159,dc=iet-gibb,dc=ch
+

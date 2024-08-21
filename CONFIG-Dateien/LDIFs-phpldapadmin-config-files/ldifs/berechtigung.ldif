@@ -1,0 +1,6 @@
+dn: cn=LDAP Read Write,ou=groups,dc=m159,dc=iet-gibb,dc=ch
+changetype: modify
+add: member
+member: cn=mit-kdc,ou=mit-kerberos,dc=m159,dc=iet-gibb,dc=ch
+member: cn=mit-kadmind,ou=mit-kerberos,dc=m159,dc=iet-gibb,dc=ch
+

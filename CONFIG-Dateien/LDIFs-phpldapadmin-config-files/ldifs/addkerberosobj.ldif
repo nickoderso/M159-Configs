@@ -1,0 +1,16 @@
+dn: ou=mit-kerberos,dc=m159,dc=iet-gibb,dc=ch
+objectClass: organizationalUnit
+ou: mit-kerberos
+
+dn: cn=mit-kdc,ou=mit-kerberos,dc=m159,dc=iet-gibb,dc=ch
+objectClass: organizationalRole
+objectClass: simpleSecurityObject
+cn: mit-kdc
+userPassword: sml12345
+
+dn: cn=mit-kadmind,ou=mit-kerberos,dc=m159,dc=iet-gibb,dc=ch
+objectClass: organizationalRole
+objectClass: simpleSecurityObject
+cn: mit-kadmind
+userPassword: sml12345
+

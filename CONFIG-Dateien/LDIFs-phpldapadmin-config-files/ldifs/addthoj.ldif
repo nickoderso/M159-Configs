@@ -1,0 +1,4 @@
+dn: cn=Thomas Jaeggi,ou=people,dc=m159,dc=iet-gibb,dc=ch
+objectClass: person
+cn: Thomas Jaeggi
+sn: Jaeggi

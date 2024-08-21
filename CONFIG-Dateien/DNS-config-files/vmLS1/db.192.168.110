@@ -1,0 +1,13 @@
+; BIND reverse data file for local loopback interface
+; Zone: 110.168.192.in-addr.arpa
+$TTL	86400 ;
+@	IN	SOA	vmLS1.m159.iet-gibb.ch. root.vmLS1.m159.iet-gibb.ch. (
+	      	2022082201		; Serial
+	 	604800			; Refresh
+	 	86400	       		; Retry
+		2419200			; Expire
+	 	604800 )		; Negative Cache TTL
+
+		NS	vmLS1.m159.iet-gibb.ch.
+61.110.168.192.in-addr.arpa.	PTR	vmLS1.m159.iet-gibb.ch. ; lässt sich kürzer schreiben
+30     	PTR	vmLP1.m159.iet-gibb.ch.

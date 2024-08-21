@@ -1,0 +1,15 @@
+network:
+  ethernets:
+    eth0:
+      addresses:
+      - 192.168.110.30/24
+      nameservers:
+        addresses:
+        - 192.168.110.61
+        search:
+        - m159.iet-gibb.ch
+      routes:
+      - to: default
+        via: 192.168.110.2
+  version: 2
+
